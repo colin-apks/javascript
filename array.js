@@ -43,3 +43,16 @@ Array.prototype.unique= function() {
 }
 var arr=[13,4,13,23,5,77,568,34,13,5];
 arr.unique()
+
+/*自己突然想到这个。。。*/
+function unique(arr){
+    var result=[],
+    hash={};
+    for(var i=0,elem;(elem=arr[i]) !=null;i++){
+        if (!hash[elem]) {
+            result.push(elm);
+            hash[elem]=true;
+        };
+    }
+    return result;
+}
