@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		#demo{
+			width: 200px;
+			height: 200px;
+			border:1px solid #ccc;
+			margin: 100px 200px;
+			position: relative;
+	
+		}
+		#demo:before{
+			content: "";
+			width: 50px;
+			height: 50px;
+			background: white;
+			border-top: 1px solid #ccc;
+			border-right: 1px solid #ccc;
+			position: absolute;
+			left: 175px;
+			top: 75px;
+			transform: rotate(45deg);
+			-ms-transform: rotate(45deg);		/* IE 9 */
+			-webkit-transform: rotate(45deg);	/* Safari and Chrome */
+			-o-transform: rotate(45deg);		/* Opera */
+			-moz-transform: rotate(45deg);		/* Firefox */
+			
+
+
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="demo"></div>
+</body>
+</html>
